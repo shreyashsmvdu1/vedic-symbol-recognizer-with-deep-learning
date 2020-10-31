@@ -1,1 +1,1 @@
-# Logo-Recognizer-with-deep-learning
+Famous brands logo/ancient icons dataset
