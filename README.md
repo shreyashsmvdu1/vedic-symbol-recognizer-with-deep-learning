@@ -1,1 +1,2 @@
-Famous brands logo/ancient icons dataset
+Some of the ancient indian instruments,symbols, & things used for worship... is recognized with details through web cam or smartphone cam...
+
