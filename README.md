@@ -1,15 +1,4 @@
 A DEEP-LEARNING BASED ANCIENT SYMBOLS' RECOGNISER, THAT DOES ITS RECOGNITION VIA A WEB-CAM OR A SMARTPHONE CAMERA, PROVIDING US WITH THE DETAILS ABOUT THE SYMBOL'S SIGNIFICANCE AND USAGE. 
-
-
-<<<<<<< HEAD
-symbols of vedic period contains 
-1. om
-2. 5 different types of sankha
-3. sriyantra
-4.swastik
-5. ancient desig kalash
-6. different types of diyas
-
 =======
 SYMBOLS OF VEDIC PERIOD THAT CAN BE RECOGNISED ARE :
 
