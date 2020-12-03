@@ -1,2 +1,1 @@
-Some of the ancient indian instruments,symbols, & things used for worship... is recognized with details through web cam or smartphone cam...
-
+A DEEP-LEARNING BASED ANCIENT SYMBOLS' RECOGNISER, THAT DOES ITS RECOGNITION VIA A WEB-CAM OR A SMARTPHONE CAMERA, PROVIDING US WITH THE DETAILS ABOUT THE SYMBOL'S SIGNIFICANCE AND USAGE. 
