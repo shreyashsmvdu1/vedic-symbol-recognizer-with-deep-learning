@@ -1,11 +1,11 @@
-Some of the ancient indian instruments,symbols, & things used for worship... is recognized with details through web cam or smartphone cam...
+A DEEP-LEARNING BASED ANCIENT SYMBOLS' RECOGNISER, THAT DOES ITS RECOGNITION VIA A WEB-CAM OR A SMARTPHONE CAMERA, PROVIDING US WITH THE DETAILS ABOUT THE SYMBOL'S SIGNIFICANCE AND USAGE. 
+=======
+SYMBOLS OF VEDIC PERIOD THAT CAN BE RECOGNISED ARE :
 
-
-symbols of vedic period contains 
-1. om
-2. 5 different types of sankha
-3. sriyantra
-4.swastik
-5. ancient desig kalash
-6. different types of diyas
-
+1. OM
+2. FIVE DIFFERENT TYPES OF SANKHA
+3. SRI-YANTRA
+4. SWASTIKA
+5. ANCIENT DESIGN KALASH
+6. DIFFERENT DIYAS
+>>>>>>> db50b820a4021bbac644010dd925c71d62e027f8
