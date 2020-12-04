@@ -1,11 +1,9 @@
-Some of the ancient indian instruments,symbols, & things used for worship... is recognized with details through web cam or smartphone cam...
+ DOMAIN OF DATASET CONTAINS SYMBOLS OF VEDIC PERIOD THAT CAN BE RECOGNISED ARE :
 
-
-symbols of vedic period contains 
-1. om
-2. 5 different types of sankha
-3. sriyantra
-4.swastik
-5. ancient desig kalash
-6. different types of diyas
+1. OM
+2. FIVE DIFFERENT TYPES OF SANKHA
+3. SRI-YANTRA
+4. SWASTIKA
+5. ANCIENT DESIGN KALASH
+6. DIFFERENT DIYAS
 
