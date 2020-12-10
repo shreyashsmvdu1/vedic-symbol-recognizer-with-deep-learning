@@ -1,0 +1,180 @@
+
+
+
+part 1: 
+
+importing dataset 'Vedic dataset'
+
+into datapath, the dataset have two categories Vedic symbols & Vedic worshipping  device.
+
+part 2:
+
+now diving into data prepocessing:
+
+1.for loop of categories.
+
+in this section we are going through each and every image in the data folder & loading the images
+
+2. then images converted into grey scale.
+
+try:
+            gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)           
+           
+            resized=cv2.resize(gray,(img_size,img_size))
+          
+
+resizing into 100X100
+
+  data.append(resized)
+            target.append(label_dict[category])  
+
+image append {appending the resized images}
+
+exception case in case image isn't loading properly :-
+
+    
+        except Exception as e:
+            print('Exception:',e)
+...................................
+
+import numpy as np
+
+data=np.array(data)/255.0
+
+in this section diving by 255 converting the pixel range into 0 & 1. by diving with 255.
+
+read the article for mor3e info roll no 78:- https://machinelearningmastery.com/how-to-manually-scale-image-pixel-data-for-deep-learning/
+
+
+data=np.reshape(data,(data.shape[0],img_size,img_size,1))  
+
+You always have to feed a 4D array of shape (batch_size, height, width, depth) to the CNN. Output data from CNN is also a 4D array of shape (batch_size, height, width, depth). To add a Dense layer on top of the CNN layer, we have to change the 4D output of CNN to 2D using a Flatten layer
+
+target=np.array(target)
+
+from keras.utils import np_utils
+
+new_target=np_utils.to_categorical(target)...
+
+
+
+..............................
+
+
+np.save('data',data) -- containing images
+
+
+np.save('target',new_target) ---- vedic tools, or vedic symbols  
+
+
+
+part 3: training the cnn:-
+
+the prepocessed data is now load for training  using two layers of cnn 200*3*3 & 100*3*3
+
+
+
+from keras.models import Sequential
+from keras.layers import Dense,Activation,Flatten,Dropout
+from keras.layers import Conv2D,MaxPooling2D
+from keras.callbacks import ModelCheckpoint
+
+model=Sequential()
+
+model.add(Conv2D(200,(3,3),input_shape=data.shape[1:]))
+model.add(Activation('relu'))   -- part of cnn
+model.add(MaxPooling2D(pool_size=(2,2)))  -- part of cnn
+
+
+model.add(Conv2D(100,(3,3)))
+model.add(Activation('relu'))
+model.add(MaxPooling2D(pool_size=(2,2)))
+
+
+model.add(Flatten())   -- flattining 
+model.add(Dropout(0.6))   - avoiding overfitting.
+
+model.add(Dense(50,activation='relu'))  - 50 neurons dense layer.
+
+model.add(Dense(2,activation='softmax'))
+
+
+model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])  
+
+
+about adam optimizer :-
+
+What is the Adam optimization algorithm?
+
+Adam is an optimization algorithm that can be used instead of the classical stochastic gradient descent procedure to update network weights iterative based in training data.
+
+
+output layer for two category........
+
+
+..................................................................
+
+
+from sklearn.model_selection import train_test_split
+
+train_data,test_data,train_target,test_target=train_test_split(data,target,test_size=0.1)
+
+
+test & train split.
+
+.......................................................................
+
+
+checkpoint = ModelCheckpoint('model-{epoch:03d}.model',monitor='val_loss',verbose=0,save_best_only=True,mode='auto')
+history=model.fit(train_data,train_target,epochs=12,callbacks=[checkpoint],validation_split=0.2)  
+
+
+this is model checkpoint epoches and monintering things...
+
+
+.....................................................................
+
+
+from matplotlib import pyplot as plt
+
+plt.plot(history.history['loss'],'r',label='training loss')
+plt.plot(history.history['val_loss'],label='validation loss')
+plt.xlabel('# epochs')
+plt.ylabel('loss')
+plt.legend()
+plt.show() 
+
+plotting the val & trainig loss.
+
+
+
+...................................................
+
+printing accuracy 
+
+
+print(model.evaluate(test_data,test_target))
+
+
+.....................................
+
+
+note :- 1.relu & maxpoll read or watch any video about it for your knwledge ..  it is a part of cnn 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
