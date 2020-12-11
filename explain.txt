@@ -158,6 +158,12 @@ print(model.evaluate(test_data,test_target))
 
 .....................................
 
+ problem faced & key idea:-
+
+the main problem was the randomness of the data and overfitting problem at the starting the model was badly overfitting so we decided to arrange things in two part tools & symbols... 2 layer of cnn & 10 epoches makes it working. Then we added more dataset.
+
+
+
 
 note :- 1.relu & maxpoll read or watch any video about it for your knwledge ..  it is a part of cnn 
 
