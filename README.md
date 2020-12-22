@@ -34,8 +34,9 @@ Steps:-
 
 problems faced:-
 
-1. Overfitting
+1. Overfitting 
 2. problem with accuracy
+3. settling the dataset
 
 further work:-
 1. deployment & enhancement of domain of dataset.
