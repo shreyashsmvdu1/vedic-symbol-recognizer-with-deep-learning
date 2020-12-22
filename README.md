@@ -21,7 +21,7 @@ WORSHIPPING TOOL:-
 
 Project is implemented using:-
 
-1. keras, Tensorflow, OpenCV
+1. keras, Tensorflow, OpenCV, tkinter
 
 
 Steps:-
@@ -29,6 +29,8 @@ Steps:-
 1. Data preprocessing (RGB to Grey & resizing)
 2. Training the model using CNN (test, train split, epoches)
 3. Getting done by plotting graph
+4. Use of 2X3 model for better accuracy
+5. GUI model
 
 problems faced:-
 
@@ -36,4 +38,4 @@ problems faced:-
 2. problem with accuracy
 
 further work:-
-1. deployment & use with random images to detect the model
+1. deployment & enhancement of domain of dataset.
